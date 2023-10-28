@@ -38,14 +38,3 @@ export default class ArraySchema {
 		return !validations.includes(false);
 	}
 }
-
-const ex0 = [];
-const ex1 = [0, 0, 0, 0, [1], [1, [2]]];
-const ex2 = [1, 2, 3, [0, [1, [2, [3, [4]]]]]];
-const ex3 = [1, [2], [1, [2, [3, [4, [5, [6, [7, [8, [9, [10, [11]]]]]]]]]]]];
-const ex4 = [[1], [[2]], [[[3]]]];
-console.log(countDepth(ex0));
-console.log(countDepth(ex1));
-console.log(countDepth(ex2));
-console.log(countDepth(ex3));
-console.log(countDepth(ex4));
